@@ -1,6 +1,8 @@
 # [Won't Fix] Unity-Bug-Report-Playable-IN-38581
 
 **Unity has stated that they will not fix this bug.**
+But I was unable to reproduce the issue described in this sample project in Unity 2022.2.13f1 and Unity 2023.2.0.a11. 
+This may mean that Unity has stated that they will not fix other underlying logic related to this issue, rather than this specific one.
 
 ## About this issue
 
