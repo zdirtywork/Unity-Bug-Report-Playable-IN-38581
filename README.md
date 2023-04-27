@@ -1,4 +1,6 @@
-# Unity-Bug-Report-Playable-IN-38581
+# [Won't Fix] Unity-Bug-Report-Playable-IN-38581
+
+**Unity has stated that they will not fix this bug.**
 
 ## About this issue
 
