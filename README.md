@@ -4,6 +4,11 @@
 But I was unable to reproduce the issue described in this sample project in Unity 2022.2.13f1 and Unity 2023.2.0.a11. 
 This may mean that Unity has stated that they will not fix other underlying logic related to this issue, rather than this specific one.
 
+> RESOLUTION NOTE:
+> After evaluating the impact, workaround and risk associated with fixing this issue, in addition to the current team's bandwidth and priorities, we have concluded that this issue will not be addressed in the foreseeable future.
+> 
+> We are closing this issue as Won’t Fix.
+
 ## About this issue
 
 Animation Playable is affected by both Time.timeScale and Editor execution mode, which can result in inconsistent behavior.
