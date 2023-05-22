@@ -19,7 +19,7 @@ Normally, these two characters should always overlap after starting to play the 
 
 Specifically, the issue manifests as follows:
 - When `Time.timeScale == 1`, the differences between the two animations start to become noticeable from the 3rd frame.
-- When `Time.timeScale >= 0.85`, the two animations remain consistent.
+- When `Time.timeScale <= 0.85`, the two animations remain consistent.
 - When `Time.timeScale >= 2`, the difference between the two animations is very small, and the larger the value of Time.timeScale, the smaller the difference between the animations.
 - When played FRAME BY FRAME, the two animations always remain consistent.
 - When `Time.timeScale == 1`, playing the first 3 frames FRAME BY FRAME, and then switching to automatic playback, the two animations can also always remain consistent.
