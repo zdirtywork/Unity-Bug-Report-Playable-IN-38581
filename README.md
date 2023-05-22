@@ -21,12 +21,12 @@ but in reality, their positions are affected by `Time.timeScale` and
 the execution mode of the Editor(AUTOMATIC or FRAME-BY-FRAME).
 
 Specifically, the issue manifests as follows:
-a. When `Time.deltaTime == 1`, the differences between the two animations start to become noticeable from the 3rd frame.
-b. When `Time.deltaTime >= 0.85`, the two animations remain consistent.
-c. When `Time.deltaTime >= 2`, the difference between the two animations is very small,
-   and the larger the value of Time.deltaTime, the smaller the difference between the animations.
+a. When `Time.timeScale == 1`, the differences between the two animations start to become noticeable from the 3rd frame.
+b. When `Time.timeScale >= 0.85`, the two animations remain consistent.
+c. When `Time.timeScale >= 2`, the difference between the two animations is very small,
+   and the larger the value of Time.timeScale, the smaller the difference between the animations.
 d. When played FRAME BY FRAME, the two animations always remain consistent.
-e. When `Time.deltaTime == 1`, playing the first 3 frames FRAME BY FRAME,
+e. When `Time.timeScale == 1`, playing the first 3 frames FRAME BY FRAME,
    and then switching to automatic playback, the two animations can also always remain consistent.
 
 In addition, `AnimationStream.velocity` and `AnimationStream.angularVelocity` are affected by `Time.timeScale`,
